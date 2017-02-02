@@ -9,7 +9,6 @@
         <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
 
-
     {% endblock estilos %}
 
     {% block titulo %}
@@ -25,6 +24,10 @@
 {% block content %}
 
     <h6>pagina principal</h6>
+    {% if valor < 21 %}
+        <span> Valor menor a 21</span>
+    {% endif %}
+    <hr>
 
 {% endblock %}
 
@@ -33,6 +36,7 @@
 {% endblock %}
 
 {% block js %}
+    <script src="{% static 'js/main.js' %}"></script>
 {% endblock %}
 </body>
 </html>
